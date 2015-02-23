@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="org.hibernate:com.springsource.org.hibernate.validator:4.2.0.Final" type="repository">
+    <properties maven-id="org.hibernate:com.springsource.org.hibernate.validator:4.2.0.Final" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/com.springsource.org.hibernate.validator/4.2.0.Final/com.springsource.org.hibernate.validator-4.2.0.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/validation/com.springsource.javax.validation/1.0.0.GA/com.springsource.javax.validation-1.0.0.GA.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/com.springsource.slf4j.api/1.6.1/com.springsource.slf4j.api-1.6.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/joda/com.springsource.org.joda.time/1.6.0/com.springsource.org.joda.time-1.6.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/com.springsource.org.jsoup/1.5.2/com.springsource.org.jsoup-1.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
