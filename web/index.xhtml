@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Contacts</title>
+    </h:head>
+    <h:outputStylesheet library="css" name="styles.css" />
+
+    <f:view>
+        <h1>Messages</h1>
+
+        <h:form id="form">
+            <h:inputText id="title" value="#{ ContactForm.name}" /> <h:message for="title"/><br/>
+            <h:inputTextarea value="#{ ContactForm.phone }" /><br/>
+            <h:inputTextarea value="#{ ContactForm.email }" /><br/>
+            <h:commandButton type="submit" value="Add Contact" action="#{ContactForm.addInternalContact}" />
+        </h:form>
+
+        <ul>
+            <ui:repeat value="#{Contacts.internals}" var="entry">
+                <li>
+                    <h2>#{entry.name}</h2>
+                    <h4>#{entry.phone}</h4>
+                    <h4>#{entry.email}</h4>
+                    <h4>#{entry.department}</h4>
+                    <!--div class="message">#{entry.message}</div-->
+                </li>
+            </ui:repeat>
+        </ul>
+        <ul>
+            <ui:repeat value="#{Contacts.externals}" var="entry">
+                <li>
+                    <h2>#{entry.name}</h2>
+                    <h4>#{entry.phone}</h4>
+                    <h4>#{entry.email}</h4>
+                    <h4>#{entry.company}</h4>
+                    <!--div class="message">#{entry.message}</div-->
+                </li>
+            </ui:repeat>
+        </ul>
+
+    </f:view>
+</html>
